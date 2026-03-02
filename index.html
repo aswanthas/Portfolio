@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | iOS Developer</title>
+  <meta name="description" content="Senior iOS Mobile Application Developer Portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome for standard icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar glass sticky">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">iOS<span class="text-gradient">Dev</span></a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon dark-icon"></i>
+        <i class="fa-solid fa-sun light-icon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+      <div class="hero-bg">
+        <div class="hero-glow blob-1"></div>
+        <div class="hero-glow blob-2"></div>
+      </div>
+      <div class="container hero-content fade-in-up">
+        <span class="hero-badge">Open to new opportunities</span>
+        <h1 class="hero-title">Crafting native iOS experiences with <br /><span class="text-gradient">precision and
+            passion.</span></h1>
+        <p class="hero-tagline">Dedicated iOS Developer focused on crafting impactful mobile experiences.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary glass">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image-wrapper fade-in-left">
+            <div class="about-image-glow"></div>
+            <img
+              src="pp.jpeg"
+              alt="Profile" class="about-image">
+          </div>
+          <div class="about-text fade-in-right">
+            <p class="bioText">Hello! I'm Aswanth K, an iOS Developer based in Dubai, UAE. I focus on creating beautiful
+              and intuitive mobile applications using Swift and SwiftUI.</p>
+            <p class="bioText mt-4">Beyond native iOS development, I enjoy exploring new architectures and building
+              open-source projects.</p>
+            <div class="skills-container mt-8">
+              <h3 class="skills-title">Core Technologies</h3>
+              <div class="skills-grid">
+                <span class="skill-badge glass">Swift</span>
+                <span class="skill-badge glass">SwiftUI</span>
+                <span class="skill-badge glass">CoreData</span>
+                <span class="skill-badge glass">MVVM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass fade-in-up">
+            <div class="project-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1614064641913-6b71f90cc270?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="iCredentialSaver" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">iCredentialSaver</h3>
+              <p class="project-desc">A Swift-based iOS app for secure credential management using CoreData. Designed
+                with SwiftUI and MVVM architecture, featuring robust encryption and Face ID/Touch ID authentication.</p>
+              <div class="project-tech">
+                <span>SwiftUI</span>
+                <span>CoreData</span>
+                <span>CryptoKit</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aswanthas" class="btn-text" target="_blank">View Project <i
+                    class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://github.com/aswanthas" class="btn-icon" aria-label="GitHub" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass fade-in-up delay-1">
+            <div class="project-image-container">
+              <img
+                src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="iPlay" class="project-image">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">iPlay</h3>
+              <p class="project-desc">A lightweight and modern audio player built natively for the Apple ecosystem.
+                Features seamless playback and media organization.</p>
+              <div class="project-tech">
+                <span>SwiftUI</span>
+                <span>CoreData</span>
+                <span>AVFoundation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aswanthas" class="btn-text" target="_blank">View Project <i
+                    class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://github.com/aswanthas" class="btn-icon" aria-label="GitHub" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Timeline -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <!-- Job 1 -->
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <div class="timeline-header">
+                <h3 class="timeline-role">iOS Engineer</h3>
+                <span class="timeline-date">Jan 2025 – Present</span>
+              </div>
+              <h4 class="timeline-company">Appcom Solutions Technologies (Dubai, UAE)</h4>
+              <p class="timeline-desc">Developing "Elite Interact," a community-focused mobile application for
+                residents. Engineering features for secure utility bill payments and resource access utilizing MVVM and
+                SwiftUI architectures.</p>
+            </div>
+          </div>
+          <!-- Job 2 -->
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <div class="timeline-header">
+                <h3 class="timeline-role">iOS Engineer</h3>
+                <span class="timeline-date">Sep 2024 – Dec 2024</span>
+              </div>
+              <h4 class="timeline-company">AppCake (Freelance)</h4>
+              <p class="timeline-desc">Responsible for fundamentally revamping application UIs using SwiftUI to align
+                with modern fluid design standards. Maintained and integrated scalable JSON data structures and Dropbox
+                APIs for efficient file management.</p>
+            </div>
+          </div>
+          <!-- Job 3 -->
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <div class="timeline-header">
+                <h3 class="timeline-role">iOS Engineer</h3>
+                <span class="timeline-date">Feb 2022 – Jul 2024</span>
+              </div>
+              <h4 class="timeline-company">Perfectz Digital (Sharjah, UAE / Remote)</h4>
+              <p class="timeline-desc">Crafted robust iOS software products within an agile, on-demand tech consulting
+                environment. Worked to rapidly prototype and implement highly scalable custom IT solutions.</p>
+            </div>
+          </div>
+          <!-- Job 4 -->
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <div class="timeline-header">
+                <h3 class="timeline-role">iOS Engineer</h3>
+                <span class="timeline-date">Feb 2022 – Jun 2024</span>
+              </div>
+              <h4 class="timeline-company">Cakap (Indonesia / Remote)</h4>
+              <p class="timeline-desc">Key contributor to the "Cakap Upskilling Platform Enhancement Project." Led the
+                modernization of legacy features into testable MVVM SwiftUI codebases. Mentored peers via GitLab code
+                reviews and enforced strict TDD unit testing methodologies.</p>
+            </div>
+          </div>
+          <!-- Job 5 -->
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <div class="timeline-header">
+                <h3 class="timeline-role">iOS App Developer</h3>
+                <span class="timeline-date">August 2021 – Jan 2022</span>
+              </div>
+              <h4 class="timeline-company">iROHUB Infotech / Acemoney</h4>
+              <p class="timeline-desc">Began as a mobile app developmental intern standardizing Swift deployment
+                structures and transitioned briefly into roles at Acemoney facilitating secure Fintech data pipelines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container fade-in">
+        <div class="contact-card glass">
+          <div class="contact-info">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-desc">I'm currently looking for new iOS opportunities. Whether you have a question or just
+              want to chat about the latest SwiftUI features, I'll try my best to get back to you!</p>
+            <div class="contact-links mt-6">
+              <a href="mailto:aswanthiosdev@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i>
+                aswanthiosdev@gmail.com</a>
+              <div class="social-links mt-6">
+                <a href="https://github.com/aswanthas" aria-label="GitHub" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aswanth-k-234193202" aria-label="LinkedIn" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://medium.com/@aswanthas124" aria-label="Medium" target="_blank"><i
+                    class="fa-brands fa-medium"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form action="https://formsubmit.co/73a7a3196124ce3f28e02a64e2b7b3f1" method="POST" id="contactForm"
+              class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                  placeholder="Hello! I'd like to discuss an iOS role..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Send Message <i
+                  class="fa-solid fa-paper-plane ml-2"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="copyright">© <span id="currentYear"></span> Your Name. All rights reserved.</p>
+      <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
