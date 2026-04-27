@@ -219,12 +219,13 @@ h6 {
     left: 0;
     width: 100%;
     height: var(--nav-height);
-    background: var(--nav-bg);
+    background: transparent;
     z-index: 999;
     border-radius: 0;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid var(--glass-border);
     transition: var(--transition);
 }
 
@@ -239,14 +240,9 @@ h6 {
     padding: 0 24px;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.nav-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    position: relative;
 }
 
 .nav-links {
@@ -285,6 +281,8 @@ h6 {
 }
 
 .theme-toggle {
+    position: absolute;
+    right: 24px;
     background: transparent;
     border: none;
     color: var(--text-primary);
@@ -456,9 +454,23 @@ h6 {
    Projects Section
    ========================================================================== */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    display: flex;
     gap: 32px;
+    overflow-x: auto;
+    padding: 24px 5vw 48px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-grid:active {
+    cursor: grabbing;
 }
 
 .project-card {
@@ -467,6 +479,7 @@ h6 {
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     padding: 0;
+    flex: 0 0 340px;
 }
 
 .project-card:hover {
@@ -481,10 +494,25 @@ h6 {
 }
 
 .project-image {
-    width: 100%;
+    width: 130%;
+    margin-left: -15%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.app-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(128, 128, 128, 0.05);
+}
+
+.app-icon {
+    width: 100%;
+    margin-left: 0;
+    object-fit: contain;
+    padding: 24px;
 }
 
 .project-card:hover .project-image {
@@ -645,12 +673,7 @@ h6 {
 /* ==========================================================================
    Contact Section
    ========================================================================== */
-.contact-card {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
-    padding: 40px;
-}
+
 
 .contact-desc {
     color: var(--text-secondary);
@@ -661,6 +684,7 @@ h6 {
 .contact-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     font-size: 1.1rem;
     font-weight: 500;
@@ -672,6 +696,7 @@ h6 {
 
 .social-links {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -792,9 +817,14 @@ h6 {
     }
 }
 
+.parallax {
+    will-change: transform;
+}
+
 .fade-in {
     opacity: 0;
     transition: opacity 0.8s ease;
+    will-change: opacity;
 }
 
 .fade-in.appear {
@@ -805,6 +835,7 @@ h6 {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: opacity, transform;
 }
 
 .fade-in-up.appear {

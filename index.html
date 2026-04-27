@@ -24,7 +24,6 @@
   <!-- Navigation -->
   <nav class="navbar glass sticky">
     <div class="nav-container">
-      <a href="#" class="nav-logo">Aswanth <span class="text-gradient">K</span></a>
       <div class="nav-links">
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
@@ -42,8 +41,8 @@
     <!-- Hero Section -->
     <section id="hero" class="section hero">
       <div class="hero-bg">
-        <div class="hero-glow blob-1"></div>
-        <div class="hero-glow blob-2"></div>
+        <div class="hero-glow blob-1 parallax" data-speed="0.2"></div>
+        <div class="hero-glow blob-2 parallax" data-speed="-0.3"></div>
       </div>
       <div class="container hero-content fade-in-up">
         <span class="hero-badge">Open to new opportunities</span>
@@ -66,9 +65,7 @@
         <div class="about-grid">
           <div class="about-image-wrapper fade-in-left">
             <div class="about-image-glow"></div>
-            <img
-              src="pp.jpeg"
-              alt="Profile" class="about-image">
+            <img src="pp.jpeg" alt="Profile" class="about-image">
           </div>
           <div class="about-text fade-in-right">
             <p class="bioText">Hello! I'm Aswanth K, an iOS Developer based in Dubai, UAE. I focus on creating beautiful
@@ -93,15 +90,16 @@
     <section id="projects" class="section projects">
       <div class="container">
         <div class="section-header fade-in">
-          <h2 class="section-title">Selected Projects</h2>
+          <h2 class="section-title">Projects</h2>
         </div>
-        <div class="projects-grid">
+      </div>
+      <div class="projects-grid">
           <!-- Project 1 -->
-          <div class="project-card glass fade-in-up">
+          <div class="project-card glass fade-in-up" style="order: 4;">
             <div class="project-image-container">
               <img
                 src="https://images.unsplash.com/photo-1614064641913-6b71f90cc270?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="iCredentialSaver" class="project-image">
+                alt="iCredentialSaver" class="project-image" draggable="false">
             </div>
             <div class="project-content">
               <h3 class="project-title">iCredentialSaver</h3>
@@ -122,11 +120,11 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="project-card glass fade-in-up delay-1">
+          <div class="project-card glass fade-in-up delay-1" style="order: 5;">
             <div class="project-image-container">
               <img
                 src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="iPlay" class="project-image">
+                alt="iPlay" class="project-image" draggable="false">
             </div>
             <div class="project-content">
               <h3 class="project-title">iPlay</h3>
@@ -146,8 +144,78 @@
             </div>
           </div>
 
+          <!-- Project 3 -->
+          <div class="project-card glass fade-in-up delay-2" style="order: 2;">
+            <div class="project-image-container app-icon-container">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/e4/0b/53e40bba-d95f-3a4b-a5fc-61ff6aa3fc38/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg"
+                alt="Bismi Gold & Diamonds" class="project-image app-icon" draggable="false">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Bismi Gold & Diamonds</h3>
+              <p class="project-desc">A premium mobile shopping experience for luxury jewelry. Developed for iOS, providing seamless browsing, secure transactions, and a stunning UI for fine jewelry enthusiasts.</p>
+              <div class="project-tech">
+                <span>iOS</span>
+                <span>Swift</span>
+                <span>E-Commerce</span>
+              </div>
+              <div class="project-links">
+                <a href="https://apps.apple.com/ae/app/bismi-gold-diamonds/id6758271270" class="btn-text" target="_blank">App Store <i
+                    class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://apps.apple.com/ae/app/bismi-gold-diamonds/id6758271270" class="btn-icon" aria-label="App Store" target="_blank"><i
+                    class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+          </div>
 
-        </div>
+          <!-- Project 4 -->
+          <div class="project-card glass fade-in-up delay-3" style="order: 3;">
+            <div class="project-image-container app-icon-container">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/0f/e1/f20fe172-6c24-3f2c-d720-07ab69a1c3d1/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg"
+                alt="Cakap" class="project-image app-icon" draggable="false">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Cakap</h3>
+              <p class="project-desc">A leading online language learning application. I contributed to the Upskilling Platform Enhancement Project, modernizing legacy code into a testable MVVM SwiftUI architecture.</p>
+              <div class="project-tech">
+                <span>iOS</span>
+                <span>SwiftUI</span>
+                <span>MVVM</span>
+              </div>
+              <div class="project-links">
+                <a href="https://apps.apple.com/ae/app/cakap-online-language-learning/id1434645453" class="btn-text" target="_blank">App Store <i
+                    class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://apps.apple.com/ae/app/cakap-online-language-learning/id1434645453" class="btn-icon" aria-label="App Store" target="_blank"><i
+                    class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card glass fade-in-up delay-4" style="order: 1;">
+            <div class="project-image-container app-icon-container">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/24/0c/5c/240c5c04-000c-9a21-ca60-e9934f8ac343/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
+                alt="Elite Interact" class="project-image app-icon" draggable="false">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Elite Interact</h3>
+              <p class="project-desc">A comprehensive platform for interacting with premium services. Currently working on this project, focusing on seamless user experiences, modern UI patterns, and robust architecture.</p>
+              <div class="project-tech">
+                <span>iOS</span>
+                <span>SwiftUI</span>
+                <span>Architecture</span>
+              </div>
+              <div class="project-links">
+                <a href="https://apps.apple.com/ae/app/elite-interact/id6443482958" class="btn-text" target="_blank">App Store <i
+                    class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://apps.apple.com/ae/app/elite-interact/id6443482958" class="btn-icon" aria-label="App Store" target="_blank"><i
+                    class="fa-brands fa-apple"></i></a>
+              </div>
+            </div>
+          </div>
+
       </div>
     </section>
 
@@ -234,43 +302,23 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
       <div class="container fade-in">
-        <div class="contact-card glass">
-          <div class="contact-info">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-desc">I'm currently looking for new iOS opportunities. Whether you have a question or just
-              want to chat about the latest SwiftUI features, I'll try my best to get back to you!</p>
-            <div class="contact-links mt-6">
-              <a href="mailto:aswanthiosdev@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i>
-                aswanthiosdev@gmail.com</a>
-              <div class="social-links mt-6">
-                <a href="https://github.com/aswanthas" aria-label="GitHub" target="_blank"><i
-                    class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/aswanth-k-234193202" aria-label="LinkedIn" target="_blank"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://medium.com/@aswanthas124" aria-label="Medium" target="_blank"><i
-                    class="fa-brands fa-medium"></i></a>
-              </div>
+        <div class="section-header">
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <p class="contact-desc">I'm currently looking for new iOS opportunities. Whether you have a question or just
+            want to chat about the latest SwiftUI features, I'll try my best to get back to you!</p>
+          <div class="contact-links mt-6">
+            <a href="mailto:aswanthiosdev@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i>
+              aswanthiosdev@gmail.com</a>
+            <div class="social-links mt-6">
+              <a href="https://github.com/aswanthas" aria-label="GitHub" target="_blank"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/aswanth-k-234193202" aria-label="LinkedIn" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://medium.com/@aswanthas124" aria-label="Medium" target="_blank"><i
+                  class="fa-brands fa-medium"></i></a>
             </div>
-          </div>
-          <div class="contact-form-wrapper">
-            <form action="https://formsubmit.co/73a7a3196124ce3f28e02a64e2b7b3f1" method="POST" id="contactForm"
-              class="contact-form">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required
-                  placeholder="Hello! I'd like to discuss an iOS role..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-full">Send Message <i
-                  class="fa-solid fa-paper-plane ml-2"></i></button>
-            </form>
           </div>
         </div>
       </div>
