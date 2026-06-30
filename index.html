@@ -1,337 +1,369 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | iOS Developer</title>
-  <meta name="description" content="Senior iOS Mobile Application Developer Portfolio">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswanth K — iOS Engineer</title>
+  <meta name="description" content="iOS Mobile Application Developer Portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- FontAwesome for standard icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Scroll Progress -->
-  <div class="scroll-progress-container">
-    <div class="scroll-progress-bar" id="scrollProgress"></div>
-  </div>
 
-  <!-- Navigation -->
-  <nav class="navbar glass sticky">
-    <div class="nav-container">
-      <div class="nav-links">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
-        <i class="fa-solid fa-moon dark-icon"></i>
-        <i class="fa-solid fa-sun light-icon"></i>
-      </button>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Aswanth K</div>
+    <div class="nav-links">
+      <a href="#about-section">About</a>
+      <a href="#skills-section">Skills</a>
+      <a href="#exp-section">Experience</a>
+      <a href="#proj-section">Projects</a>
+      <a href="#contact-section">Contact</a>
     </div>
+    <a href="mailto:aswanthiosdev@gmail.com?subject=Resume Request" class="nav-dl">Download CV</a>
   </nav>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="hero" class="section hero">
-      <div class="hero-bg">
-        <div class="hero-glow blob-1 parallax" data-speed="0.2"></div>
-        <div class="hero-glow blob-2 parallax" data-speed="-0.3"></div>
-      </div>
-      <div class="container hero-content fade-in-up">
-        <span class="hero-badge">Open to new opportunities</span>
-        <h1 class="hero-title">Crafting native iOS experiences with <br /><span class="text-gradient">precision and
-            passion.</span></h1>
-        <p class="hero-tagline">Dedicated iOS Developer focused on crafting impactful mobile experiences.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary glass">Contact Me</a>
+  <!-- HERO / ABOUT -->
+  <div id="about-section">
+    <div id="hero">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>Open to iOS Roles
         </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">About Me</h2>
+        <h1 class="hero-name">Aswanth K<br /><span class="line2">iOS Developer.</span></h1>
+        <div class="hero-role">4+ Years · Swift · SwiftUI · MVVM</div>
+        <p class="hero-desc">I build scalable, high-performance native iOS applications focused on creating beautiful,
+          intuitive mobile experiences using Swift and SwiftUI — based in Dubai, UAE.</p>
+        <div class="hero-actions">
+          <a href="#contact-section" class="btn-primary">✉ Get in Touch</a>
+          <a href="mailto:aswanthiosdev@gmail.com?subject=Resume Request" class="btn-secondary">Download CV</a>
         </div>
-        <div class="about-grid">
-          <div class="about-image-wrapper fade-in-left">
-            <div class="about-image-glow"></div>
-            <img src="pp.jpeg" alt="Profile" class="about-image">
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-n">4+</div>
+            <div class="stat-l">Years Experience</div>
           </div>
-          <div class="about-text fade-in-right">
-            <p class="bioText">Hello! I'm Aswanth K, an iOS Developer based in Dubai, UAE. I focus on creating beautiful
-              and intuitive mobile applications using Swift and SwiftUI.</p>
-            <p class="bioText mt-4">Beyond native iOS development, I enjoy exploring new architectures and building
-              open-source projects.</p>
-            <div class="skills-container mt-8">
-              <h3 class="skills-title">Core Technologies</h3>
-              <div class="skills-grid">
-                <span class="skill-badge glass">Swift</span>
-                <span class="skill-badge glass">SwiftUI</span>
-                <span class="skill-badge glass">CoreData</span>
-                <span class="skill-badge glass">MVVM</span>
-              </div>
-            </div>
+          <div class="stat">
+            <div class="stat-n">5+</div>
+            <div class="stat-l">Shipped Apps</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">Swift</div>
+            <div class="stat-l">Core Stack</div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">Projects</h2>
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img src="pp.jpeg" alt="Aswanth K" />
+          <div class="photo-overlay"></div>
+          <div class="photo-badge">
+            <div>
+              <div class="photo-badge-text">Aswanth K</div>
+              <div class="photo-badge-sub">iOS Engineer</div>
+            </div>
+          </div>
         </div>
+        <div class="float-chip chip1">⚡ Swift Expert</div>
+        <div class="float-chip chip2">🏗 SwiftUI · MVVM</div>
+        <div class="float-chip chip3">📱 Dubai, UAE</div>
       </div>
-      <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card glass fade-in-up" style="order: 4;">
-            <div class="project-image-container">
-              <img
-                src="https://images.unsplash.com/photo-1614064641913-6b71f90cc270?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="iCredentialSaver" class="project-image" draggable="false">
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">iCredentialSaver</h3>
-              <p class="project-desc">A Swift-based iOS app for secure credential management using CoreData. Designed
-                with SwiftUI and MVVM architecture, featuring robust encryption and Face ID/Touch ID authentication.</p>
-              <div class="project-tech">
-                <span>SwiftUI</span>
-                <span>CoreData</span>
-                <span>CryptoKit</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/aswanthas" class="btn-text" target="_blank">View Project <i
-                    class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://github.com/aswanthas" class="btn-icon" aria-label="GitHub" target="_blank"><i
-                    class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card glass fade-in-up delay-1" style="order: 5;">
-            <div class="project-image-container">
-              <img
-                src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="iPlay" class="project-image" draggable="false">
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">iPlay</h3>
-              <p class="project-desc">A lightweight and modern audio player built natively for the Apple ecosystem.
-                Features seamless playback and media organization.</p>
-              <div class="project-tech">
-                <span>SwiftUI</span>
-                <span>CoreData</span>
-                <span>AVFoundation</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/aswanthas" class="btn-text" target="_blank">View Project <i
-                    class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://github.com/aswanthas" class="btn-icon" aria-label="GitHub" target="_blank"><i
-                    class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card glass fade-in-up delay-2" style="order: 2;">
-            <div class="project-image-container app-icon-container">
-              <img
-                src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/e4/0b/53e40bba-d95f-3a4b-a5fc-61ff6aa3fc38/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg"
-                alt="Bismi Gold & Diamonds" class="project-image app-icon" draggable="false">
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Bismi Gold & Diamonds</h3>
-              <p class="project-desc">A premium mobile shopping experience for luxury jewelry. Developed for iOS, providing seamless browsing, secure transactions, and a stunning UI for fine jewelry enthusiasts.</p>
-              <div class="project-tech">
-                <span>iOS</span>
-                <span>Swift</span>
-                <span>E-Commerce</span>
-              </div>
-              <div class="project-links">
-                <a href="https://apps.apple.com/ae/app/bismi-gold-diamonds/id6758271270" class="btn-text" target="_blank">App Store <i
-                    class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://apps.apple.com/ae/app/bismi-gold-diamonds/id6758271270" class="btn-icon" aria-label="App Store" target="_blank"><i
-                    class="fa-brands fa-apple"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card glass fade-in-up delay-3" style="order: 3;">
-            <div class="project-image-container app-icon-container">
-              <img
-                src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/0f/e1/f20fe172-6c24-3f2c-d720-07ab69a1c3d1/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg"
-                alt="Cakap" class="project-image app-icon" draggable="false">
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Cakap</h3>
-              <p class="project-desc">A leading online language learning application. I contributed to the Upskilling Platform Enhancement Project, modernizing legacy code into a testable MVVM SwiftUI architecture.</p>
-              <div class="project-tech">
-                <span>iOS</span>
-                <span>SwiftUI</span>
-                <span>MVVM</span>
-              </div>
-              <div class="project-links">
-                <a href="https://apps.apple.com/ae/app/cakap-online-language-learning/id1434645453" class="btn-text" target="_blank">App Store <i
-                    class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://apps.apple.com/ae/app/cakap-online-language-learning/id1434645453" class="btn-icon" aria-label="App Store" target="_blank"><i
-                    class="fa-brands fa-apple"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-card glass fade-in-up delay-4" style="order: 1;">
-            <div class="project-image-container app-icon-container">
-              <img
-                src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/24/0c/5c/240c5c04-000c-9a21-ca60-e9934f8ac343/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg"
-                alt="Elite Interact" class="project-image app-icon" draggable="false">
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Elite Interact</h3>
-              <p class="project-desc">A comprehensive platform for interacting with premium services. Currently working on this project, focusing on seamless user experiences, modern UI patterns, and robust architecture.</p>
-              <div class="project-tech">
-                <span>iOS</span>
-                <span>SwiftUI</span>
-                <span>Architecture</span>
-              </div>
-              <div class="project-links">
-                <a href="https://apps.apple.com/ae/app/elite-interact/id6443482958" class="btn-text" target="_blank">App Store <i
-                    class="fa-solid fa-arrow-right"></i></a>
-                <a href="https://apps.apple.com/ae/app/elite-interact/id6443482958" class="btn-icon" aria-label="App Store" target="_blank"><i
-                    class="fa-brands fa-apple"></i></a>
-              </div>
-            </div>
-          </div>
-
-      </div>
-    </section>
-
-    <!-- Experience / Timeline -->
-    <section id="experience" class="section experience">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">Experience</h2>
-        </div>
-        <div class="timeline">
-          <!-- Job 1 -->
-          <div class="timeline-item fade-in-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass">
-              <div class="timeline-header">
-                <h3 class="timeline-role">iOS Engineer</h3>
-                <span class="timeline-date">Jan 2025 – Present</span>
-              </div>
-              <h4 class="timeline-company">Appcom Solutions Technologies (Dubai, UAE)</h4>
-              <p class="timeline-desc">Developing "Elite Interact," a community-focused mobile application for
-                residents. Engineering features for secure utility bill payments and resource access utilizing MVVM and
-                SwiftUI architectures.</p>
-            </div>
-          </div>
-          <!-- Job 2 -->
-          <div class="timeline-item fade-in-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass">
-              <div class="timeline-header">
-                <h3 class="timeline-role">iOS Engineer</h3>
-                <span class="timeline-date">Sep 2024 – Dec 2024</span>
-              </div>
-              <h4 class="timeline-company">AppCake (Freelance)</h4>
-              <p class="timeline-desc">Responsible for fundamentally revamping application UIs using SwiftUI to align
-                with modern fluid design standards. Maintained and integrated scalable JSON data structures and Dropbox
-                APIs for efficient file management.</p>
-            </div>
-          </div>
-          <!-- Job 3 -->
-          <div class="timeline-item fade-in-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass">
-              <div class="timeline-header">
-                <h3 class="timeline-role">iOS Engineer</h3>
-                <span class="timeline-date">Feb 2022 – Jul 2024</span>
-              </div>
-              <h4 class="timeline-company">Perfectz Digital (Sharjah, UAE / Remote)</h4>
-              <p class="timeline-desc">Crafted robust iOS software products within an agile, on-demand tech consulting
-                environment. Worked to rapidly prototype and implement highly scalable custom IT solutions.</p>
-            </div>
-          </div>
-          <!-- Job 4 -->
-          <div class="timeline-item fade-in-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass">
-              <div class="timeline-header">
-                <h3 class="timeline-role">iOS Engineer</h3>
-                <span class="timeline-date">Feb 2022 – Jun 2024</span>
-              </div>
-              <h4 class="timeline-company">Cakap (Indonesia / Remote)</h4>
-              <p class="timeline-desc">Key contributor to the "Cakap Upskilling Platform Enhancement Project." Led the
-                modernization of legacy features into testable MVVM SwiftUI codebases. Mentored peers via GitLab code
-                reviews and enforced strict TDD unit testing methodologies.</p>
-            </div>
-          </div>
-          <!-- Job 5 -->
-          <div class="timeline-item fade-in-up">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass">
-              <div class="timeline-header">
-                <h3 class="timeline-role">iOS App Developer</h3>
-                <span class="timeline-date">August 2021 – Jan 2022</span>
-              </div>
-              <h4 class="timeline-company">iROHUB Infotech / Acemoney</h4>
-              <p class="timeline-desc">Began as a mobile app developmental intern standardizing Swift deployment
-                structures and transitioned briefly into roles at Acemoney facilitating secure Fintech data pipelines.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-      <div class="container fade-in">
-        <div class="section-header">
-          <h2 class="section-title">Let's Connect</h2>
-        </div>
-        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-          <p class="contact-desc">I'm currently looking for new iOS opportunities. Whether you have a question or just
-            want to chat about the latest SwiftUI features, I'll try my best to get back to you!</p>
-          <div class="contact-links mt-6">
-            <a href="mailto:aswanthiosdev@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i>
-              aswanthiosdev@gmail.com</a>
-            <div class="social-links mt-6">
-              <a href="https://github.com/aswanthas" aria-label="GitHub" target="_blank"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/aswanth-k-234193202" aria-label="LinkedIn" target="_blank"><i
-                  class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://medium.com/@aswanthas124" aria-label="Medium" target="_blank"><i
-                  class="fa-brands fa-medium"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <p class="copyright">© <span id="currentYear"></span> Aswanth K. All rights reserved.</p>
-      <button id="backToTop" class="back-to-top" aria-label="Back to Top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </button>
     </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills-section">
+    <div style="padding:96px 0; border-top:1px solid var(--border); background:var(--bg2);">
+      <div class="section" style="padding-top:0; padding-bottom:0;">
+        <div class="section-tag reveal">EXPERTISE</div>
+        <h2 class="section-title reveal">Skills & Technologies</h2>
+        <p class="section-sub reveal">A solid iOS engineering toolkit built across community platforms, fintech
+          pipelines, and e-commerce applications.</p>
+        <div class="skills-showcase">
+          <div class="skill-card blue reveal">
+            <div class="skill-icon-wrap">🍎</div>
+            <div class="skill-card-title">iOS Core</div>
+            <div class="skill-card-desc">Deep knowledge of Apple's developer ecosystem, building responsive user
+              interfaces and custom flows.</div>
+            <div class="skill-tags">
+              <span class="stag">Swift</span><span class="stag">SwiftUI</span><span class="stag">UIKit</span><span
+                class="stag">Objective-C</span>
+            </div>
+          </div>
+          <div class="skill-card purple reveal" style="transition-delay:0.08s">
+            <div class="skill-icon-wrap">🏛</div>
+            <div class="skill-card-title">Architecture</div>
+            <div class="skill-card-desc">Designing modular, clean, and testable codebase frameworks to ensure system
+              stability and scalability.</div>
+            <div class="skill-tags">
+              <span class="stag">MVVM</span><span class="stag">VIPER</span><span class="stag">Clean
+                Architecture</span><span class="stag">Modularization</span>
+            </div>
+          </div>
+          <div class="skill-card green reveal" style="transition-delay:0.16s">
+            <div class="skill-icon-wrap">💾</div>
+            <div class="skill-card-title">Data & Persistence</div>
+            <div class="skill-card-desc">Handling local caching, offline sync, and secure client credentials stores.
+            </div>
+            <div class="skill-tags">
+              <span class="stag">CoreData</span><span class="stag">CryptoKit</span><span
+                class="stag">Keychain</span><span class="stag">Realm</span>
+            </div>
+          </div>
+          <div class="skill-card orange reveal" style="transition-delay:0.08s">
+            <div class="skill-icon-wrap">💳</div>
+            <div class="skill-card-title">Payments & API</div>
+            <div class="skill-card-desc">Integrating secure customer payment pipelines, network layer configurations,
+              and API integrations.</div>
+            <div class="skill-tags">
+              <span class="stag">E-Commerce</span><span class="stag">REST APIs</span><span class="stag">JSON
+                Parsing</span><span class="stag">OAuth</span>
+            </div>
+          </div>
+          <div class="skill-card teal reveal" style="transition-delay:0.16s">
+            <div class="skill-icon-wrap">🧪</div>
+            <div class="skill-card-title">Testing & CI/CD</div>
+            <div class="skill-card-desc">Writing unit tests and setting up robust deployment pipelines to streamline App
+              Store releases.</div>
+            <div class="skill-tags">
+              <span class="stag">TDD</span><span class="stag">XCTest</span><span class="stag">GitLab CI</span><span
+                class="stag">TestFlight</span>
+            </div>
+          </div>
+          <div class="skill-card pink reveal" style="transition-delay:0.24s">
+            <div class="skill-icon-wrap">🔗</div>
+            <div class="skill-card-title">Integrations</div>
+            <div class="skill-card-desc">Working with third-party SDKs, file synchronization systems, and external
+              databases.</div>
+            <div class="skill-tags">
+              <span class="stag">Dropbox API</span><span class="stag">AVFoundation</span><span
+                class="stag">Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div id="exp-section">
+    <div class="section">
+      <div class="section-tag reveal">CAREER</div>
+      <h2 class="section-title reveal">Work Experience</h2>
+      <div class="exp-timeline">
+        <div class="exp-entry reveal">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div class="exp-co">Appcom Solutions Technologies</div>
+              <div class="exp-date">Jan 2025 – Present</div>
+            </div>
+            <div class="exp-pos">iOS Engineer · Dubai, UAE</div>
+            <ul class="exp-bullets">
+              <li>Developing <strong>"Elite Interact"</strong>, a community-focused mobile application for community
+                residents.</li>
+              <li>Engineering secure payment modules for utility bills and resource booking utilizing <strong>SwiftUI &
+                  MVVM</strong>.</li>
+              <li>Collaborating on modular codebase improvements to increase testability and app responsiveness.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-entry reveal">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div class="exp-co">AppCake</div>
+              <div class="exp-date">Sep 2024 – Dec 2024</div>
+            </div>
+            <div class="exp-pos">iOS Engineer (Freelance) · Remote</div>
+            <ul class="exp-bullets">
+              <li>Responsible for fundamentally revamping application UIs in <strong>SwiftUI</strong> to align with
+                fluid design guidelines.</li>
+              <li>Maintained and integrated scalable JSON data structures and <strong>Dropbox APIs</strong> for
+                efficient file management.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-entry reveal">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div class="exp-co">Perfectz Digital</div>
+              <div class="exp-date">Feb 2022 – Jul 2024</div>
+            </div>
+            <div class="exp-pos">iOS Engineer · Sharjah, UAE / Remote</div>
+            <ul class="exp-bullets">
+              <li>Crafted robust iOS software products within an agile, on-demand tech consulting environment.</li>
+              <li>Worked to rapidly prototype and implement highly scalable custom IT solutions for diverse clients.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-entry reveal">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div class="exp-co">Cakap</div>
+              <div class="exp-date">Feb 2022 – Jun 2024</div>
+            </div>
+            <div class="exp-pos">iOS Engineer · Indonesia / Remote</div>
+            <ul class="exp-bullets">
+              <li>Key contributor to the <strong>"Cakap Upskilling Platform Enhancement Project"</strong>.</li>
+              <li>Led the modernization of legacy platform code into testable <strong>MVVM SwiftUI</strong> codebases.
+              </li>
+              <li>Enforced strict TDD unit testing methodologies and conducted active code reviews.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-entry reveal">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div class="exp-co">iROHUB Infotech / Acemoney</div>
+              <div class="exp-date">Aug 2021 – Jan 2022</div>
+            </div>
+            <div class="exp-pos">iOS App Developer · Kochi, India</div>
+            <ul class="exp-bullets">
+              <li>Standardized Swift deployment structures and facilitated secure Fintech customer data pipelines.</li>
+              <li>Began as a mobile app development intern and transitioned into developing core Fintech application
+                flows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="proj-section" style="background:var(--bg2); padding:1px 0;">
+    <div class="section">
+      <div class="section-tag reveal">WORK</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="proj-card reveal" style="transition-delay:0.2s">
+          <div class="proj-thumb interact">🏢</div>
+          <div class="proj-body">
+            <div class="proj-name">Elite Interact</div>
+            <div class="proj-desc">A comprehensive community interactive platform, focusing on utility bill payments,
+              community resources, and secure profiles.</div>
+            <div class="proj-tags">
+              <span class="ptag">SwiftUI</span><span class="ptag">MVVM</span><span class="ptag">Payment SDKs</span><span
+                class="ptag">APIs</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://apps.apple.com/ae/app/elite-interact/id6443482958" target="_blank" class="btn-text">App
+                Store →</a>
+              <a href="https://apps.apple.com/ae/app/elite-interact/id6443482958" target="_blank"
+                class="btn-icon">🍎</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proj-card reveal" style="transition-delay:0.2s">
+          <div class="proj-thumb gold">💎</div>
+          <div class="proj-body">
+            <div class="proj-name">Bismi Gold & Diamonds</div>
+            <div class="proj-desc">A premium mobile shopping experience for luxury jewelry. Developed for iOS, providing
+              secure e-commerce transactions and stunning UI.</div>
+            <div class="proj-tags">
+              <span class="ptag">Swift</span><span class="ptag">UIKit</span><span class="ptag">E-Commerce</span><span
+                class="ptag">REST APIs</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://apps.apple.com/ae/app/bismi-gold-diamonds/id6758271270" target="_blank"
+                class="btn-text">App Store →</a>
+              <a href="https://apps.apple.com/ae/app/bismi-gold-diamonds/id6758271270" target="_blank"
+                class="btn-icon">🍎</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="proj-card reveal" style="transition-delay:0.1s">
+          <div class="proj-thumb learning">💬</div>
+          <div class="proj-body">
+            <div class="proj-name">Cakap</div>
+            <div class="proj-desc">A leading language learning app. Contributed to platform enhancements, modernizing
+              legacy modules to MVVM SwiftUI.</div>
+            <div class="proj-tags">
+              <span class="ptag">SwiftUI</span><span class="ptag">MVVM</span><span class="ptag">Unit Testing</span><span
+                class="ptag">REST APIs</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://apps.apple.com/ae/app/cakap-online-language-learning/id1434645453" target="_blank"
+                class="btn-text">App Store →</a>
+              <a href="https://apps.apple.com/ae/app/cakap-online-language-learning/id1434645453" target="_blank"
+                class="btn-icon">🍎</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact-section">
+    <div class="section">
+      <div class="section-tag reveal">CONTACT</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a href="mailto:aswanthiosdev@gmail.com" class="contact-card">
+            <div class="cc-icon" style="background:rgba(59, 130, 246, 0.12); font-size:22px;">✉</div>
+            <div>
+              <div class="cc-label">EMAIL</div>
+              <div class="cc-val">aswanthiosdev@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://medium.com/@aswanthas124" target="_blank" class="contact-card">
+            <div class="cc-icon" style="background:rgba(52, 211, 153, 0.12); font-size:22px;">✍</div>
+            <div>
+              <div class="cc-label">MEDIUM</div>
+              <div class="cc-val">medium.com/@aswanthas124</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/aswanth-k-234193202" target="_blank" class="contact-card">
+            <div class="cc-icon" style="background:rgba(167, 139, 250, 0.12); font-size:22px;">🔗</div>
+            <div>
+              <div class="cc-label">LINKEDIN</div>
+              <div class="cc-val">linkedin.com/in/aswanth-k-234193202</div>
+            </div>
+          </a>
+          <a href="https://github.com/aswanthas" target="_blank" class="contact-card">
+            <div class="cc-icon" style="background:rgba(251, 146, 60, 0.12); font-size:22px;">🐙</div>
+            <div>
+              <div class="cc-label">GITHUB</div>
+              <div class="cc-val">github.com/aswanthas</div>
+            </div>
+          </a>
+        </div>
+        <div class="reveal">
+          <div class="dl-card">
+            <div style="font-size:40px;">📄</div>
+            <h3>Request My Resume</h3>
+            <p>Get a copy of my complete CV with all project information, references, and credentials, ready for your
+              team.</p>
+            <a href="mailto:aswanthiosdev@gmail.com?subject=Resume Request" class="dl-btn">✉ Request CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-name">Aswanth <span>K</span></div>
+    <div class="footer-sub">// ios developer · dubai, uae · open to opportunities</div>
+    <div class="footer-copy">© 2026 Aswanth K. Built with care.</div>
   </footer>
 
   <script src="script.js"></script>
